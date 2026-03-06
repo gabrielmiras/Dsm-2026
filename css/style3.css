@@ -1,0 +1,141 @@
+/* --- RESET E ESTRUTURA --- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+/* --- HEADER --- */
+header {
+  background-color: orange; 
+  display: flex;
+  align-items: center;
+  padding: 15px 5%; 
+}
+
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+h1.texto-logo {
+    font-size: 50px; 
+    font-weight: bold;
+    color: #000;
+    margin: 0; 
+    padding: 0;
+    letter-spacing: -2px;
+}
+
+/* --- CONTEÚDO --- */
+.conteudo {
+  display: flex;
+}
+
+nav {
+  width: 25%;
+  background-color: orange;
+  padding: 20px;
+  min-height: 80vh;
+}
+
+nav ul { list-style: none; padding: 0; }
+nav li { margin-bottom: 20px; }
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px; 
+  display: block;
+}
+
+main {
+  width: 75%;
+  background-color: white;
+  display: flex;
+  padding: 20px;
+}
+
+/* --- IMAGEM E TEXTO (SECTION) --- */
+section {
+    width: 70%;
+    padding-right: 15px;
+}
+
+section img {
+    max-width: 700px; /* Tamanho grande  */
+    width: 100%;       
+    height: auto;      
+    display: block;    
+    margin: 0 auto 30px auto; 
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15); 
+    border: 1px solid #ddd;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+}
+
+/* --- BARRA LATERAL E PREÇO --- */
+aside {
+    width: 30%;
+    padding-left: 20px;
+    border-left: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    min-height: 500px; 
+}
+
+.valor-produto {
+    font-size: 38px;
+    color: #B12704; /* Vermelho Amazon */
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.botao-conferir {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.botao-conferir:hover { background-color: #555; }
+
+/* --- RODAPÉ --- */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  width: 100%;
+  margin-top: auto;
+}
+nav ul {
+    list-style: square; 
+    padding-left: 20px; 
+}

@@ -1,0 +1,124 @@
+/* --- CONFIGURAÇÕES GERAIS --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container { flex: 1; }
+
+header {
+    background-color: orange; 
+    display: flex;
+    align-items: center;
+    padding: 15px 5%; 
+}
+
+.logo-box { display: flex; align-items: center; gap: 12px; }
+
+h1.texto-logo {
+    font-size: 50px; 
+    font-weight: bold;
+    color: #000;
+    margin: 0; 
+    letter-spacing: -2px;
+}
+
+.conteudo { display: flex; }
+
+/* --- MENU LATERAL --- */
+nav {
+    width: 20%;
+    background-color: orange;
+    padding: 20px;
+    min-height: 80vh;
+}
+
+nav ul { list-style: none; padding: 0; }
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px; 
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* --- ÁREA PRINCIPAL --- */
+main {
+    width: 80%;
+    background-color: white;
+    padding: 30px;
+}
+
+.produto-detalhe { display: flex; gap: 30px; }
+
+.detalhes-livro { width: 75%; }
+
+/* --- IMAGEM MONUMENTAL --- */
+.imagem-principal {
+    width: 100%;
+    max-width: 850px; /* Tamanho extra grande */
+    height: auto;
+    display: block;
+    margin: 0 auto 40px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 1px solid #ddd;
+}
+
+.detalhes-livro h2 { font-size: 42px; text-align: center; margin-bottom: 30px; }
+.detalhes-livro p { font-size: 20px; line-height: 1.8; text-align: justify; }
+
+/* --- PAINEL DE COMPRA E PREÇO --- */
+.painel-compra {
+    width: 25%;
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* O PREÇO GIGANTE E VERMELHO */
+.preco-destaque {
+    color: #B12704;    /* Vermelho Amazon */
+    font-size: 55px;   /* Tamanho aumentado */
+    font-weight: bold;
+    margin: 15px 0;
+    display: block;
+}
+
+.botao-conferir {
+    background-color: #333;
+    color: white;
+    padding: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.botao-conferir:hover { background-color: #555; }
+
+/* --- RODAPÉ --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+}
+nav ul {
+    list-style: square; 
+    padding-left: 20px; 
+}
