@@ -8,7 +8,8 @@ header {
   background-color: orange; 
   display: flex;
   align-items: center;
-  padding: 15px 5%; 
+  justify-content: space-between;
+  padding: 30px 5%; 
 }
 
 .logo-box {
@@ -17,7 +18,6 @@ header {
     gap: 12px;
 }
 
-/* NOME AMAZON AUMENTADO */
 h1.texto-logo {
     font-size: 50px; 
     font-weight: bold;
@@ -27,55 +27,108 @@ h1.texto-logo {
     letter-spacing: -2px;
 }
 
-.conteudo {
-  display: flex;
+/* ESTILIZAÇÃO DOS BOTÕES DA HEADER */
+.header-opcoes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-/* Menu Lateral */
-nav {
-  width: 25%;
+.botao-header, .botao-header-carrinho {
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s;
+}
+
+.botao-header:hover, .botao-header-carrinho:hover {
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.linha-1 { font-size: 12px; font-weight:bold;} 
+.linha-2 { font-size: 14px; font-weight: bold; }
+
+.botao-header-carrinho {
+    flex-direction: row; 
+    align-items: flex-end; 
+    gap: 5px; 
+}
+
+.carrinho-container {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrinho-icone {
+    height: 35px; 
+    width: auto;
+}
+
+.contagem {
+    position: absolute;
+    top: -8px; 
+    color: #e47911; 
+    font-weight: bold;
+    font-size: 16px;
+    background-color: transparent; 
+}
+
+.texto-carrinho {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* --- MENU LATERAL AUMENTADO  --- */
+.conteudo { display: flex; }
+
+nav.menu-lateral {
+  flex: 1.5; 
   background-color: orange;
-  padding: 20px;
   min-height: 80vh;
+  padding: 0;
 }
 
-nav ul {
+nav.menu-lateral ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-nav li {
-    margin-bottom: 20px;
+nav.menu-lateral li {
+    border-bottom: 1px solid black;
 }
 
-/* SUBPÁGINAS AUMENTADAS */
-nav a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 24px; 
-  display: block;
+nav.menu-lateral a {
+    display: block;
+    padding: 20px;
+    color: white; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px; 
+    transition: 0.3s;
 }
 
-/* Área Principal */
+nav.menu-lateral a:hover {
+    background-color: black;
+}
+
+/* --- ÁREA PRINCIPAL --- */
 main {
-  width: 75%;
+  flex: 3.5; 
   background-color: white;
   display: flex;
   padding: 20px;
 }
 
-section {
-    width: 70%;
-    padding-right: 15px;
-}
+section { width: 70%; padding-right: 15px; text-align: justify; }
 
-section h2 {
-    color: #333;
-    font-size: 28px;
-}
-
-/* Barra Lateral  */
 aside {
     width: 30%;
     padding-left: 20px;
@@ -86,7 +139,7 @@ aside {
     min-height: 400px; 
 }
 
-/* Estilo do Botão  */
+/* --- BOTÃO COM HOVER FLUTUANTE --- */
 .botao-conferir {
     background-color: #333;
     color: white;
@@ -94,13 +147,16 @@ aside {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    font-size: 18px;
     text-align: center;
-    margin-top: 20px;
+    display: block; 
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .botao-conferir:hover {
-    background-color: #555;
+    background-color: #e47911; 
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2); 
 }
 
 footer {
@@ -108,9 +164,4 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
-}
-
-nav ul {
-    list-style: square; 
-    padding-left: 20px; 
 }
