@@ -8,13 +8,13 @@
     <meta name="author" content="Miras">
     <title>Amazon | Notebooks Gamer</title>
     <link rel="shortcut icon" href="Img/amazon.png">
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/notebook.css">
 </head>
 
 <body>
     <div class="container">
         <header>
-            <a href="index.html" class="logo-link">
+            <a href="index.html" style="text-decoration: none; color: inherit;">
                 <div class="logo-box">
                     <img src="Img/amazon.png" alt="Logo Amazon" height="60">
                     <h1 class="texto-logo">Amazon da Shopee</h1>
@@ -22,12 +22,11 @@
             </a>
 
             <div class="header-opcoes">
-                <a href="#" class="botao-header-carrinho">
+                <a href="#" class="botao-header">
                     <div class="carrinho-container">
-                        
-                        <img src="Img/carrinho-de-compras.png" alt="Ícone do Carrinho" class="carrinho-icone">
+                        <img src="Img/carrinho-de-compras.png" alt="Ícone do Carrinho" class="header-icone">
+                        <span class="texto-botao">Carrinho</span>
                     </div>
-                    <span class="texto-carrinho">Carrinho</span>
                 </a>
             </div>
         </header>
@@ -35,25 +34,26 @@
         <div class="conteudo">
             <nav class="menu-lateral">
                 <ul>
-                    <li><a href="index.html">Página Inicial</a></li>
-                    <li><a href="Livros.html">Livros de Romance</a></li>
-                    <li><a href="camisasdacopa.html">Camisa da seleção</a></li>
-                    <li><a href="bonequinho do ney.html">Ney Toys</a></li>
+                    <li><a href="Livros.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                    </svg> Livros de romance</a></li>
+                    <li><a href="camisasdacopa.html"><img src="/Dsm-2026/Img/camisetaicone.png" alt="Ícone de Camisa" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 5px; "> Camisas da Seleção</a></li>
+                    <li><a href="bonequinho do ney.html"><img src="/Dsm-2026/Img/mouse-toy.png" alt="Ícone de Boneco" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 5px; ">Ney Toys</a></li>
                 </ul>
             </nav>
 
             <main>
                 <section>
-                    <img src="Img/notebook.png" alt="notebook gamer">
+                    <img src="Img/notebook.png" alt="notebook gamer" class="imagem-produto">
                     
                     <h2>Notebook Gamer de Alta Performance</h2>
                     <p>
-                        Leve sua experiênca de jogo para o próximo nível com o novo Notebook Gamer 2026. 
+                        Leve sua experiência de jogo para o próximo nível com o novo Notebook Gamer 2026. 
                         Equipado com as últimas placas de vídeo e um processador ultra veloz.
                     </p>
                     
                     <h3>Especificações:</h3>
-                    <ul>
+                    <ul class="lista-specs">
                         <li>Processador de última geração</li>
                         <li>16GB de Memória RAM</li>
                         <li>SSD de 512GB (Super Rápido)</li>
@@ -61,7 +61,7 @@
                     </ul>
                 </section>
 
-                <aside>
+                <aside class="painel-compra">
                     <div class="teste">
                        <h2>Preço Especial</h2>
                        <p class="valor-produto">R$ 4.999,99</p> 

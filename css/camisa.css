@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: orange; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%; 
+}
+
+.logo-box { display: flex; align-items: center; gap: 12px; }
+
+h1.texto-logo {
+    font-size: 50px; 
+    font-weight: bold;
+    color: #000;
+    margin: 0; 
+    letter-spacing: -2px;
+}
+
+.header-opcoes { display: flex; align-items: center; }
+
+.botao-header {
+    text-decoration: none;
+    color: white;
+    background-color: #003366;
+    padding: 0 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-width: 120px; 
+    height: 42px;
+    transition: 0.3s ease;
+}
+
+.botao-header:hover {
+    background-color: #001f40;
+    transform: translateY(-2px);
+}
+
+.header-icone {
+    height: 20px; 
+    filter: brightness(0) invert(1);
+}
+
+.texto-botao { font-weight: bold; font-size: 14px; }
+
+.conteudo { display: flex; }
+
+nav.menu-lateral {
+    flex: 1.4; 
+    background-color: orange;
+    min-height: 80vh;
+}
+
+nav.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav.menu-lateral li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav.menu-lateral a {
+    display: block;
+    padding: 28px 25px; 
+    color: #000; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 19px; 
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav.menu-lateral a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-left: 35px;
+}
+
+nav.menu-lateral a:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 6px;
+    background-color: #003366;
+}
+
+main {
+    flex: 3.6; 
+    background-color: white;
+    display: flex;
+    padding: 30px;
+}
+
+section { width: 70%; padding-right: 20px; }
+
+.imagem-produto {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.lista-detalhes {
+    line-height: 1.8;
+    font-size: 18px;
+    color: #444;
+}
+
+.painel-compra {
+    width: 30%;
+    padding-left: 20px;
+    border-left: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+}
+
+.valor-produto {
+    font-size: 42px;
+    color: #B12704;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.botao-conferir {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.botao-conferir:hover {
+    background-color: #e47911;
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 45px 0; 
+    width: 100%;
+    clear: both;
+    font-size: 15px;
+}

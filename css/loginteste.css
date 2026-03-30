@@ -1,0 +1,134 @@
+:root {
+    --amazon-orange: #ff9900;
+    --amazon-blue: #232f3e;
+    --bg-light: orange;
+    --transition-speed: 0.6s;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: var(--bg-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Navegação */
+.nav-container { margin: 40px 0; }
+.nav-menu { display: flex; gap: 20px; list-style: none; }
+.nav-menu li {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--amazon-blue);
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+.nav-menu li:hover { border-color: var(--amazon-orange); }
+
+/* Cubo 3D */
+.wrapper {
+    width: 380px;
+    height: 480px;
+    perspective: 1000px;
+}
+
+.rec-prism {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-190px);
+    transition: transform var(--transition-speed) cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.face {
+    position: absolute;
+    width: 380px;
+    height: 480px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    backface-visibility: hidden;
+}
+
+/* Posicionamento das Faces */
+.face-front  { transform: rotateY(0deg) translateZ(190px); }
+.face-right  { transform: rotateY(90deg) translateZ(190px); }
+.face-back   { transform: rotateY(180deg) translateZ(190px); }
+.face-left   { transform: rotateY(-90deg) translateZ(190px); }
+.face-bottom { transform: rotateX(-90deg) translateZ(190px); }
+
+/* Elementos do Formulário */
+.form-logo { width: 100px; margin-bottom: 20px; }
+h2 { font-weight: 500; margin-bottom: 25px; font-size: 28px; }
+
+.field-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.field-wrapper input, .field-wrapper textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    outline: none;
+    font-size: 14px;
+}
+
+.field-wrapper label {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+/* Efeito Flutuante Label */
+.field-wrapper input:focus + label,
+.field-wrapper input:not(:placeholder-shown) + label,
+.field-wrapper textarea:focus + label,
+.field-wrapper textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 8px;
+    font-size: 12px;
+    background: white;
+    padding: 0 4px;
+    color: var(--amazon-orange);
+    font-weight: bold;
+}
+
+.btn-primary {
+    width: 100%;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+    border: 1px solid #a88734;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset;
+}
+
+.btn-primary:hover { background: #f0c14b; }
+
+.success-screen {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.check-icon {
+    font-size: 60px;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}

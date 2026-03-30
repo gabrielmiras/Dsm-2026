@@ -1,0 +1,167 @@
+/* --- ESTILO GERAL --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: orange; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%; 
+}
+
+.logo-box { display: flex; align-items: center; gap: 12px; }
+
+h1.texto-logo {
+    font-size: 50px; 
+    font-weight: bold;
+    color: #000;
+    margin: 0; 
+    letter-spacing: -2px;
+}
+
+/* --- BOTÕES DO CABEÇALHO --- */
+.header-opcoes {
+    display: flex;
+    align-items: center;
+}
+
+.botao-header {
+    text-decoration: none;
+    color: white;
+    background-color: #003366;
+    padding: 0 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-width: 120px; 
+    height: 42px;
+    transition: 0.3s ease;
+}
+
+.botao-header:hover {
+    background-color: #001f40;
+    transform: translateY(-2px);
+}
+
+.header-icone {
+    height: 20px; 
+    filter: brightness(0) invert(1);
+}
+
+.texto-botao { font-weight: bold; font-size: 14px; }
+
+/* --- ESTRUTURA DE CONTEÚDO --- */
+.conteudo { display: flex; }
+
+/* --- MENU LATERAL (PADRONIZADO) --- */
+nav.menu-lateral {
+    flex: 1.2; 
+    background-color: orange;
+    min-height: 80vh;
+}
+
+nav.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav.menu-lateral li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav.menu-lateral a {
+    display: block;
+    padding: 20px 25px;
+    color: #000; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; 
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav.menu-lateral a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-left: 35px;
+}
+
+nav.menu-lateral a:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 6px;
+    background-color: #003366;
+}
+
+/* --- ÁREA DO PRODUTO --- */
+main {
+    flex: 3.8;
+    background-color: white;
+    padding: 30px;
+}
+
+.produto-detalhe { display: flex; gap: 30px; }
+
+.detalhes-livro { width: 70%; }
+
+.imagem-principal {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    display: block;
+    margin: 0 auto 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.detalhes-livro h2 { font-size: 32px; margin-bottom: 20px; color: #333; }
+.detalhes-livro p { font-size: 18px; line-height: 1.6; text-align: justify; color: #555; }
+
+/* --- PAINEL DE COMPRA --- */
+.painel-compra {
+    width: 30%;
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+}
+
+.preco-destaque {
+    color: #B12704;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* --- BOTÃO COMPRAR --- */
+.botao-conferir {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.botao-conferir:hover {
+    background-color: #e47911;
+}
+
+/* --- RODAPÉ --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

@@ -1,0 +1,202 @@
+/* --- ESTILO GERAL --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: #FFA500; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+h1.texto-logo {
+    font-size: 50px; 
+    font-weight: bold;
+    color: #000;
+    margin: 0; 
+    padding: 0;
+    letter-spacing: -2px;
+}
+
+/* --- BOTÕES DA HEADER --- */
+.header-opcoes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.botao-header {
+    text-decoration: none;
+    color: white;
+    background-color: #003366;
+    padding: 0 15px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-width: 120px; 
+    height: 42px;
+    transition: 0.3s ease;
+}
+
+.botao-header:hover {
+    background-color: #001f40;
+    border: 1px solid white;
+    transform: translateY(-2px);
+}
+
+.header-icone {
+    height: 20px; 
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.texto-botao {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* --- CONTEÚDO E ESTRUTURA --- */
+.conteudo { 
+    display: flex; 
+}
+
+/* --- MENU LATERAL (TEXTO AMPLIADO - 22PX) --- */
+nav.menu-lateral {
+    flex: 1.2; 
+    background-color: orange;
+    min-height: 80vh;
+    padding: 0;
+}
+
+nav.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav.menu-lateral li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav.menu-lateral a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 25px 30px;
+    color: #000; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px; /* Escrita aumentada para 22px */
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Ajuste para todos os ícones (SVG e Imagens) do menu */
+nav.menu-lateral a svg, 
+nav.menu-lateral a img {
+    width: 22px !important;
+    height: 22px !important;
+    flex-shrink: 0;
+}
+
+/* Efeito de Hover Modernizado */
+nav.menu-lateral a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-left: 40px; 
+}
+
+nav.menu-lateral a:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 8px;
+    background-color: #003366;
+}
+
+/* --- ÁREA PRINCIPAL --- */
+main {
+    flex: 3.8; 
+    background-color: white;
+    display: flex;
+    padding: 20px;
+}
+
+section { 
+    width: 70%; 
+    padding-right: 15px; 
+    text-align: justify; 
+}
+
+section h2 {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+aside {
+    width: 30%;
+    padding-left: 20px;
+    border-left: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    min-height: 400px; 
+}
+
+.teste {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* --- BOTÃO CONFERIR --- */
+.botao-conferir {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    display: block; 
+    transition: all 0.3s ease; 
+}
+
+.botao-conferir:hover {
+    background-color: #e47911; 
+    transform: scale(1.02);
+}
+
+/* --- RODAPÉ (ESTICADO E AMPLIADO) --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 0; /* Aumentado de 20px para 40px para "esticar" */
+    font-size: 18px; /* Letra um pouco maior para facilitar a leitura */
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 100%;
+    clear: both;
+}
